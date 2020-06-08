@@ -204,10 +204,10 @@ img {
   margin-bottom: 30px;
 }
 
-.features-img:hover,
+/* .features-img:hover,
 .features-img:focus {
   background-color: var(--accent-color);
-}
+} */
 /* .features-item {
   margin-bottom: 30px;
 } */
