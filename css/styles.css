@@ -106,12 +106,21 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: inherit;
 }
 
 .contacts .contact-item:hover,
 .contacts .contact-item:focus {
   color: var(--accent-color);
+  cursor: pointer;
+  fill: currentColor;
 }
+
+.nav-icon {
+  fill: inherit;
+  margin-right: 10px;
+}
+
 
 .contacts {
   display: flex;
