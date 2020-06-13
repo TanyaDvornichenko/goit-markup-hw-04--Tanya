@@ -334,7 +334,7 @@ img {
   height: 260px;
 }
 
-.social-links img {
+.social-links .social-img {
   margin-bottom: 24px;
   display: block;
   padding: 12px;
@@ -342,8 +342,8 @@ img {
 }
 
 .social-svg {
-  margin-bottom: 24px;
-  display: block;
+  /* margin-bottom: 24px; */
+  /* display: block; */
   outline: 1px solid teal;
 }
 
@@ -387,9 +387,10 @@ img {
   text-align: center;
 }
 
-.social-links .social-logo,
-.social-svg {
+.social-logo-link {
   display: block;
+  width: 44px;
+  height: 44px;
 }
 
 .social-svg {
@@ -405,7 +406,11 @@ img {
 .social-links {
   display: flex;
   justify-content: space-evenly;
-  outline: 1px solid teal;
+}
+.social-links-list {
+  display: flex;
+  justify-content: space-evenly;
+  /* outline: 1px solid teal; */
 }
 
 /* Секция 4 Постоянные клиенты */
