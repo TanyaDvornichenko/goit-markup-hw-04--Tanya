@@ -121,7 +121,6 @@ img {
   margin-right: 10px;
 }
 
-
 .contacts {
   display: flex;
   margin-left: auto;
@@ -151,7 +150,10 @@ img {
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(
-    to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
     url("../img/Header-img.jpg");
   /* outline: 1px solid black; */
 
@@ -203,7 +205,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.features-img {
+.features-field {
   display: block;
   padding: 30px 100px;
   width: 270px;
@@ -336,6 +338,13 @@ img {
   margin-bottom: 24px;
   display: block;
   padding: 12px;
+  outline: 1px solid rosybrown;
+}
+
+.social-svg {
+  margin-bottom: 24px;
+  display: block;
+  outline: 1px solid teal;
 }
 
 .team .list {
@@ -378,13 +387,25 @@ img {
   text-align: center;
 }
 
-.social-links img {
+.social-links .social-logo,
+.social-svg {
   display: block;
+}
+
+.social-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-svg:hover {
+  fill: #ffffff;
 }
 
 .social-links {
   display: flex;
   justify-content: space-evenly;
+  outline: 1px solid teal;
 }
 
 /* Секция 4 Постоянные клиенты */
@@ -476,9 +497,9 @@ img {
 }
 
 .footer .exclamation {
-   margin-bottom: 21px;
-   margin-top: 0.8px;
-   color: var(--white-color);
+  margin-bottom: 21px;
+  margin-top: 0.8px;
+  color: var(--white-color);
 
   text-transform: uppercase;
   font-weight: 700;
@@ -490,7 +511,6 @@ img {
 .footer-social-list {
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .footer-social-list img {
@@ -503,23 +523,20 @@ img {
 
   width: 44px;
   height: 44px;
-    border-radius: 100%;}
-
+  border-radius: 100%;
+}
 
 .footer-social.link {
   text-decoration: none;
-  
 }
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
-   
 }
 
 .footer-social-item:hover,
 .footer-social-item:focus {
   background-color: var(--accent-color);
 }
-
 
 .about {
   width: 1170px;
@@ -551,11 +568,10 @@ img {
   margin-left: 8px;
 }
 
-
 .button-pf {
   display: block;
   padding: 6px 22px;
-  
+
   background-color: #f5f4fa;
   color: var(--basic-color);
   border-radius: 4px;
@@ -618,9 +634,8 @@ button {
 }
 
 .gallery-conteiner .flex-element {
-    box-sizing: border-box;
-    }
-
+  box-sizing: border-box;
+}
 
 .gallery-description {
   border-left: 1px solid #eeeeee;
@@ -629,7 +644,6 @@ button {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-
 
 .flex-element {
   width: calc((100% - 60px) / 3);
@@ -651,10 +665,8 @@ button {
   margin-bottom: 0;
 }
 
-
-
 .gallery-conteiner img {
-    display: block;
+  display: block;
 }
 
 .gallery-conteiner h2 {
@@ -716,7 +728,6 @@ font-style: normal; 400
 font-weight: bold */
 
 /* outline: 5px solid cornflowerblue; */
-
 
 /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке */
 
