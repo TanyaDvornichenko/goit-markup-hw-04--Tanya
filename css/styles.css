@@ -334,18 +334,7 @@ img {
   height: 260px;
 }
 
-.social-links .social-img {
-  margin-bottom: 24px;
-  display: block;
-  padding: 12px;
-  outline: 1px solid rosybrown;
-}
 
-.social-svg {
-  /* margin-bottom: 24px; */
-  /* display: block; */
-  outline: 1px solid teal;
-}
 
 .team .list {
   display: flex;
@@ -387,10 +376,40 @@ img {
   text-align: center;
 }
 
-.social-logo-link {
+.social-block {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.social-links .social-img {
+  margin-bottom: 24px;
   display: block;
-  width: 44px;
-  height: 44px;
+  padding: 12px;
+  outline: 1px solid rosybrown;
+  }
+
+.social-logo-link {
+display: flex;
+width: 40px;
+height: 40px;
+justify-content: center;
+align-items: center;
+border-radius: 100%;
+margin-bottom: 24px;
+}
+
+.social-logo-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-logo-link:hover .social-svg {
+  fill: #ffffff;
+}
+
+.social-svg {
+  /* margin-bottom: 24px; */
+  /* display: block; */
+  /* outline: 1px solid teal; */
 }
 
 .social-svg {
@@ -399,9 +418,7 @@ img {
   fill: #afb1b8;
 }
 
-.social-svg:hover {
-  fill: #ffffff;
-}
+
 
 .social-links {
   display: flex;
@@ -432,10 +449,20 @@ img {
   margin-left: 30px;
 }
 
-.customers img {
+.customers-logo {
   display: block;
   height: 90px;
+  
+  fill:#afb1b8 ;
 }
+
+.custtomer-frame {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
 /*   ПОДВАЛ  */
 
 .footer {
