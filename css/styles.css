@@ -451,17 +451,19 @@ margin-bottom: 24px;
 
 .customers-logo {
   display: block;
-  height: 90px;
-  
   fill:#afb1b8 ;
-}
 
-.custtomer-frame {
   width: 170px;
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
+
+.customers-logo:hover {
+  fill: var(--accent-color);
+  border: 1px solid #2196f3;
+}
+
 
 /*   ПОДВАЛ  */
 
