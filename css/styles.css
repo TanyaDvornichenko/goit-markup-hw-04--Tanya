@@ -398,13 +398,18 @@ border-radius: 100%;
 margin-bottom: 24px;
 }
 
-.social-logo-link:hover {
+.social-logo-link:hover, .social-logo-link:focus {
   background-color: var(--accent-color);
 }
 
 .social-logo-link:hover .social-svg {
   fill: #ffffff;
 }
+
+.social-logo-link:focus .social-svg {
+  fill: #ffffff;
+}
+
 
 .social-svg {
   /* margin-bottom: 24px; */
@@ -459,7 +464,7 @@ margin-bottom: 24px;
   border-radius: 4px;
 }
 
-.customers-logo:hover {
+.customers-logo:hover, .customers-logo:focus {
   fill: var(--accent-color);
   border: 1px solid #2196f3;
 }
@@ -661,6 +666,12 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+
+.flex-element:focus,
+.flex-element:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 
 .flex-gallery {
   display: flex;
