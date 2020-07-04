@@ -32,15 +32,16 @@ img {
 }
 
 .header {
-  background-color: #ececec;
-  justify-content: center;
-  display: flex;
-}
+  background-color: var(--white-color);
+  outline: 2px solid teal
+ }
 
 .conteiner {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
   
 }
 
@@ -149,7 +150,7 @@ img {
   padding-top: 200px;
 }
 .hero > .overlay {
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin-right: auto;
   margin-left: auto;
@@ -336,9 +337,6 @@ img {
   background: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
-
-  justify-content: center;
-  display: flex;  
 }
 
 .team-foto {
@@ -353,6 +351,7 @@ img {
 }
 
 .team .card {
+  width: 270px;
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -402,8 +401,8 @@ img {
 
 .social-logo-link {
 display: flex;
-width: 40px;
-height: 40px;
+width: 44px;
+height: 44px;
 justify-content: center;
 align-items: center;
 border-radius: 100%;
@@ -412,22 +411,25 @@ margin-bottom: 24px;
 
 .social-logo-link:hover, .social-logo-link:focus {
   background-color: var(--accent-color);
+  
 }
 
-.social-logo-link:hover .social-svg {
+.social-logo-link:hover .social-svg, 
+.social-logo-link:focus .social-svg {
+  background-color: var(--accent-color);
+}
+
+.footer-social-svg {
   fill: #ffffff;
+  
 }
 
+/* 
 .social-logo-link:focus .social-svg {
   fill: #ffffff;
-}
+} */
 
 
-.social-svg {
-  /* margin-bottom: 24px; */
-  /* display: block; */
-  /* outline: 1px solid teal; */
-}
 
 .social-svg {
   width: 20px;
@@ -573,11 +575,11 @@ margin-bottom: 24px;
   display: flex;
   justify-content: space-evenly;
 }
-
+/* 
 .footer-social-list img {
   display: block;
   padding: 12px;
-}
+} */
 
 .footer-social-item {
   background: rgba(255, 255, 255, 0.1);
@@ -586,6 +588,37 @@ margin-bottom: 24px;
   height: 44px;
   border-radius: 100%;
 }
+
+
+
+.footer-social-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+
+.footer-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-bottom: 24px; }
+
+  .footer-social-list > .footer-social:hover, 
+  .footer-social-list > .footer-social:focus {
+    background-color: var(--accent-color);
+      }
+  
+  .social-logo-link:hover .social-svg, 
+  .social-logo-link:focus .social-svg {
+    fill: #ffffff;
+  }
+  
+  
+
 
 .footer-social.link {
   text-decoration: none;
@@ -677,10 +710,7 @@ button {
 
 /*  Карточки портфолио  */
 
-.main-portfolio {
-  display: flex;
-  justify-content: center;
-}
+
 
 .pf-descr {
   color: var(--paragr-gris-color);
